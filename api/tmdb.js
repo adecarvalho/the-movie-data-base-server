@@ -40,7 +40,6 @@ function searchMovieById(id) {
       //genres
       const rangesTab = result.genres;
       rangesTab.forEach(element => {
-        console.log(element.name);
         movie.genres.push(element.name);
       });
 
@@ -60,7 +59,7 @@ function searchMovieById(id) {
         return item.department === 'Writing';
       });
       tabScreenPlay.forEach(element => {
-        movie.screenplay.push(element.name);
+        movie.screenplay.push({ name: element.name, job: element.job });
       });
       //
 

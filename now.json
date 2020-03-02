@@ -2,7 +2,7 @@
   "name": "the-movie-database-server",
   "version": 2,
   "env": {
-    "TMDB_API_KEY": "@tmdb_api_key"
+    "API_KEY": "@tmdb_api_key"
   },
   "builds": [
     {
